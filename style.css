@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap');
+
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing:0;
+}
+
+#main-header
+{
+    padding:20px;
+    /*width:100%;*/
+    text-align: center;
+    background:rgb(160, 231, 235);
+}
+
+#main-header > h1
+{
+    font-size: 50px;
+    font-family: Asap,sans-serif;
+    color:rgb(247, 116, 171);
+}
+#main-header > h3
+{
+    font-size: 20px;
+    font-family: Asap,sans-serif;
+    color:rgb(247, 116, 171);
+}
+
+body
+{
+    background:rgb(104, 217, 117);
+}
+
+:root {
+    --speed: 0;
+}
+.machine {
+    background-color: peru;
+    border: dashed brown 3px;
+    height: 300px;
+    width: 900px;
+    margin-left: 300px;
+    margin-right:300px;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+    /*margin: 150px 300px;*/
+    /*justify-content: center;*/
+    z-index: 5;
+    /*padding: 50px auto;*/
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+#inpSpeed {
+    font-size: 30pt;
+    margin-left: 30px;
+    width: 50px;
+}
+
+.slot {
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+
+    overflow: hidden;
+
+    z-index: 1;
+
+    background-color: beige;
+    border: solid darkblue 2px;
+    text-align: center;
+    font-size: 100pt;
+    line-height: 250px;
+}
+
+.slot>.value {
+    z-index: 3;
+    animation-name: slotspin;
+    animation-iteration-count: infinite;
+    animation-duration: calc(1s / var(--speed));
+}
+
+@keyframes slotspin {
+    0% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(200px);
+    }
+}
+
+#button-red
+{
+    background:rgb(240, 62, 89);
+    padding: 12px 10px;
+    border-radius: 3px;
+    font-family: Asap , sans-serif;
+    color:white;
+    transition: all 300ms ease
+}
+
+#button-red:hover
+{
+    background:rgb(245, 12, 48);
+    cursor: pointer;
+}
+
+#button-end
+{
+    background:rgb(240, 62, 89);
+    padding: 12px 10px;
+    margin-left: 25px;
+    border-radius: 3px;
+    font-family: Asap , sans-serif;
+    color:white;
+    transition: all 300ms ease
+}
+
+#button-end:hover
+{
+    background:rgb(245, 12, 48);
+    cursor: pointer;
+}
+
+#button-div
+{
+    display: inline-block;
+   
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 45%;
+    margin-right: 50px;
+    text-align: center;
+   /* padding: 50px auto;*/
+}
+
+#speed_div
+{
+    text-align: center;
+}
+
+#speed_text
+{
+    font-family: Asap , sans-serif;
+    color: rgb(232, 102, 9);
+    font-size: 30px;
+}
+#inpSpeed
+{
+    margin-left: -15px;
+}
+
+
+@media (max-width: 575.98px) { 
+    #main-header
+    {
+        padding:20px;
+        /*width:100%;*/
+        text-align: center;
+        background:rgb(160, 231, 235);
+    }
+
+    #main-header > h1
+    {
+        font-size: 50px;
+        font-family: Asap,sans-serif;
+        color:rgb(247, 116, 171);
+    }
+    #main-header > h3
+    {
+        font-size: 20px;
+        font-family: Asap,sans-serif;
+        color:rgb(247, 116, 171);
+    }
+
+    body
+    {
+        background:rgb(104, 217, 117);
+    }
+
+    :root {
+        --speed: 0;
+    }
+    
+    
+    .machine {
+        background-color: peru;
+        border: dashed brown 3px;
+        height: auto;
+        width: 400px;
+        margin-left: auto;
+        margin-right:auto;
+        margin-top: 50px;
+        margin-bottom: 50px; 
+        /*margin: 150px 300px;*/
+        /*justify-content: center;*/
+        z-index: 5;
+        /*padding: 50px auto;*/
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+    }
+
+    #inpSpeed {
+        font-size: 30pt;
+        margin-left: 30px;
+        width: 50px;
+    }
+
+    .slot {
+        height: 50%;
+        width: 350px;
+        margin: 20px;
+    
+        overflow: hidden;
+    
+        z-index: 1;
+    
+        background-color: beige;
+        border: solid darkblue 2px;
+        text-align: center;
+        font-size: 150px;
+        line-height: 250px;
+    }
+    .slot>.value {
+        z-index: 3;
+        animation-name: slotspin;
+        animation-iteration-count: infinite;
+        animation-duration: calc(1s / var(--speed));
+    }
+    
+    @keyframes slotspin {
+        0% {
+            transform: translateY(-200px);
+        }
+        100% {
+            transform: translateY(200px);
+        }
+    }
+
+    #button-div
+    {
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 40%;
+        margin-right: 50%;
+        text-align: center;
+    /* padding: 50px auto;*/
+    }
+    #button-end
+    {
+        background:rgb(240, 62, 89);
+        padding: 12px 10px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 3px;
+        font-family: Asap , sans-serif;
+        color:white;
+        transition: all 300ms ease;
+    }
+ }
+
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .machine {
+        background-color: peru;
+        border: dashed brown 3px;
+        height: auto;
+        width: 400px;
+        margin-left: auto;
+        margin-right:auto;
+        margin-top: 50px;
+        margin-bottom: 50px; 
+        /*margin: 150px 300px;*/
+        /*justify-content: center;*/
+        z-index: 5;
+        /*padding: 50px auto;*/
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+    }
+
+    .slot {
+        height: 50%;
+        width: 350px;
+        margin: 20px;
+    
+        overflow: hidden;
+    
+        z-index: 1;
+    
+        background-color: beige;
+        border: solid darkblue 2px;
+        text-align: center;
+        font-size: 150px;
+        line-height: 250px;
+    }
+
+    #button-div
+    {
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 45%;
+        margin-right: 50%;
+        text-align: center;
+    /* padding: 50px auto;*/
+    }
+    #button-end
+    {
+        background:rgb(240, 62, 89);
+        padding: 12px 10px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 3px;
+        font-family: Asap , sans-serif;
+        color:white;
+        transition: all 300ms ease;
+    }
+ }
+
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .machine {
+        background-color: peru;
+        border: dashed brown 3px;
+        height: auto;
+        width: 400px;
+        margin-left: auto;
+        margin-right:auto;
+        margin-top: 50px;
+        margin-bottom: 50px; 
+        /*margin: 150px 300px;*/
+        /*justify-content: center;*/
+        z-index: 5;
+        /*padding: 50px auto;*/
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-flow: row wrap;
+    }
+
+    .slot {
+        height: 50%;
+        width: 350px;
+        margin: 20px;
+    
+        overflow: hidden;
+    
+        z-index: 1;
+    
+        background-color: beige;
+        border: solid darkblue 2px;
+        text-align: center;
+        font-size: 150px;
+        line-height: 250px;
+    }
+
+    #button-div
+    {
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 45%;
+        margin-right: 50%;
+        text-align: center;
+    /* padding: 50px auto;*/
+    }
+    #button-end
+    {
+        background:rgb(240, 62, 89);
+        padding: 12px 10px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 3px;
+        font-family: Asap , sans-serif;
+        color:white;
+        transition: all 300ms ease;
+    }
+ }
+
+ @media (min-width: 992px) and (max-width: 1199.98px) { 
+    .machine {
+        background-color: peru;
+        border: dashed brown 3px;
+        height: auto;
+        width: 400px;
+        margin-left: auto;
+        margin-right:auto;
+        margin-top: 50px;
+        margin-bottom: 50px; 
+        /*margin: 150px 300px;*/
+        /*justify-content: center;*/
+        z-index: 5;
+        /*padding: 50px auto;*/
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-flow: row wrap;
+    }
+
+    .slot {
+        height: 50%;
+        width: 350px;
+        margin: 20px;
+    
+        overflow: hidden;
+    
+        z-index: 1;
+    
+        background-color: beige;
+        border: solid darkblue 2px;
+        text-align: center;
+        font-size: 150px;
+        line-height: 250px;
+    }
+
+    #button-div
+    {
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 45%;
+        margin-right: 50%;
+        text-align: center;
+    /* padding: 50px auto;*/
+    }
+    #button-end
+    {
+        background:rgb(240, 62, 89);
+        padding: 12px 10px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 3px;
+        font-family: Asap , sans-serif;
+        color:white;
+        transition: all 300ms ease;
+    }
+  }
+ 
+ /* // Extra large devices (large desktops, 1200px and up)
+ @media (min-width: 1200px) { ... } */
